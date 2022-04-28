@@ -6,7 +6,7 @@
 #    By: mrhyhorn <mrhyhorn@student.21-school.ru    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/14 16:03:20 by mrhyhorn          #+#    #+#              #
-#    Updated: 2022/02/16 14:39:06 by mrhyhorn         ###   ########.fr        #
+#    Updated: 2022/03/11 14:17:59 by mrhyhorn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,13 +64,11 @@ OPFLAGS = -O2
 CFLAGS = -Wall -Wextra -Werror
 SANIT_FLAGS = gcc -g -fsanitize=address $(CFLAGS)
 
-all : $(LIBFT) ./libft/libft.a $(NAME) $(NAME_B)
+.PHONY : all bonus clean fclean sanit_m sanit_b re lib
 
-.PHONY : all bonus clean fclean sanit_m sanit_b re
+all : lib $(NAME) $(NAME_B)
 
-FORCE : ;
-
-$(LIBFT) : FORCE
+lib :
 	make -C libft/
 
 $(NAME) : $(OBJS_M) $(LIBFT)
