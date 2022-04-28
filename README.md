@@ -151,19 +151,19 @@ For bonus part we need to make <code>checker</code> program that should test whe
 
 <code>make</code> or <code>make all</code> will compile both push_swap and checker programs
 
-```
+```c
 ./push_swap [list of arguments]
 ```
-```
+```c
 ARG="[list of arguments]"; ./push_swap $ARG | ./checker $ARG
 ```
 
 ### Useful commands to test the program
 
-```
+```c
 ARG=`ruby -e "puts (1..500).to_a.shuffle.join(' ')"`; ./push_swap $ARG | ./checker $ARG
 ```
 
-```
+```c
 ARG="-755254759 46382822 168313279 -712408378 -976005565 532734670 -658929270"; ./push_swap $ARG
 ```
