@@ -30,14 +30,14 @@ To succeed you’ll have to manipulate various types of algorithms and choose th
 
 <code>sa (swap a)</code>: Swap the first 2 elements at the top of stack a. Do nothing if there is only one or no elements.
 
+<div align="center" style="max-width: 300px; margin: 0 auto">
+	<img src="imgs/sa.svg" max-width="100%" max-height="100%">
+</div>
+
 <code>sb (swap b)</code>: Swap the first 2 elements at the top of stack b.
 Do nothing if there is only one or no elements.
 
 <code>ss</code> : sa and sb at the same time.
-
-<div align="center" style="max-width: 300px; margin: 0 auto">
-	<img src="imgs/sa.svg" max-width="100%" max-height="100%">
-</div>
 
 <!-- |             |             |
 | :---        | :---        |
