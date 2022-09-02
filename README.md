@@ -1,7 +1,3 @@
-<div align="center" max-width="300px">
-	<img src="imgs/21_42_logos.png" alight="center">
-</div>
-
 # 🔢 push_swap
 
 ## Summary
